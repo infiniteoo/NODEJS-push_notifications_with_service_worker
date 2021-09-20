@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/infiniteoo/NODEJS-push_notifications_with_service_worker/issues"
   },
-  "homepage": "https://github.com/infiniteoo/NODEJS-push_notifications_with_service_worker#readme"
+  "homepage": "https://github.com/infiniteoo/NODEJS-push_notifications_with_service_worker#readme",
+  "dependencies": {
+    "asn1": "^0.2.4",
+    "http_ece": "^1.1.0",
+    "https-proxy-agent": "^5.0.0",
+    "jws": "^4.0.0",
+    "minimist": "^1.2.5",
+    "urlsafe-base64": "^1.0.0"
+  }
 }
