@@ -1,7 +1,17 @@
+require("dotenv").config();
 const express = require("express");
 const webpush = require("web-push");
 const path = require("path");
 const app = express();
+
+const publicVapidKey = process.env.PUBLIC_VAPID_KEY;
+const privateVapidKey = process.env.PRIVATE_VAPID_KEY;
+
+webpush.setVapidDetails(
+  "mailto: troydorman@gmail.com",
+  publicVapidKey,
+  privateVapidKey
+);
 
 // set static path
 app.use(express.static(path.join(__dirname, "client")));
